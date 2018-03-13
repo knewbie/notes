@@ -1,0 +1,24 @@
+{
+    "created_time": "2018-03-07T05:11:36Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-03-07T05:12:22Z",
+            "modified_time": "2018-03-07T05:12:22Z",
+            "name": "go的初始化.md"
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-03-13T12:58:01Z",
+            "modified_time": "2018-03-13T12:58:01Z",
+            "name": "go依赖安装.md"
+        }
+    ],
+    "sub_directories": [
+    ],
+    "version": "1"
+}

@@ -1,0 +1,17 @@
+{
+    "attachment_folder": "_v_attachments",
+    "created_time": "",
+    "files": [
+    ],
+    "image_folder": "images",
+    "recycle_bin_folder": "_v_recycle_bin",
+    "sub_directories": [
+        {
+            "name": "linux"
+        },
+        {
+            "name": "go"
+        }
+    ],
+    "version": "1"
+}
