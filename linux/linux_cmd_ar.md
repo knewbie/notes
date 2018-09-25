@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 # linux_cmd_ar
 
 `ar`命令是*nix系统下的一个命令行工具，用来打包`C/C++`编译过后的`.o`对象文件的.
+=======
+vnote_backup_file_826537664 /home/kevin/mynotebooks/notes/linux/linux_cmd_ar.md
+# linux_cmd_ar
+
+`ar`命令是*nix系统下的一个命令行工具，用来打包`C/C++`编译过后的`.o`对象文件的。
+
+在项目接入iOS渠道SDK时，经常会碰到一个文件
+>>>>>>> 61068dbc34675157c9a2e38d96add539666dda2f
 
 原文标题：ar命令解压.a时候，报错 is a fat file (use libtool(1) or lipo(1) and ar(1) on it)
 

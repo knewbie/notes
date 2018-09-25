@@ -14,3 +14,10 @@
 `indent -bad -bli 0 -ce -kr -nsob --space-after-if --space-after-while --space-after-for --use-tabs -i8
 `
 
+<<<<<<< HEAD
+=======
+## ldconfig
+在新安装一些程序依赖库后,立马执行,可以还会提示找不到安装的依赖库,
+此时执行一个这个密令,就可以更新系统连接库.
+`sudo ldconfig`
+>>>>>>> 61068dbc34675157c9a2e38d96add539666dda2f
