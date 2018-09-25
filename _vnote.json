@@ -11,7 +11,30 @@
         },
         {
             "name": "go"
+        },
+        {
+            "name": "ncurses-programming"
+        },
+        {
+            "name": "game_server"
+        },
+        {
+            "name": "C_C++"
+        },
+        {
+            "name": "others"
+        },
+        {
+            "name": "lua"
+        },
+        {
+            "name": "english"
+        },
+        {
+            "name": "macos"
         }
+    ],
+    "tags": [
     ],
     "version": "1"
 }

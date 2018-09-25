@@ -1,0 +1,40 @@
+#  hello, ncurses
+
+首先，我们将通过一个简单的小程序，来简单介绍一下`ncurses`程序的基本结构。
+*Hello, XXX*系列之`ncuses` :
+
+```
+    #include <ncurses.h>
+
+    int main()
+    {
+        initscr();
+        printw("hello, ncurses!");
+        refresh();
+        endwin();
+
+        return 0;
+    }
+```
+
+以上就是我们最基本的`hello, ncurses`程序，它将在屏幕上输出： hello, ncurses ！
+在程序中调用了几个 `ncurses` 库中的函数接口，下面将分别介绍它们的作用。
+
+ `initscr` , 这是对终端屏幕进行任何操作前，必须优先调用的函数接口，它将**Terminal**用*curses mode*模式进行初始化，并为我们当前的操作窗口(叫作`stdscr`)分配内存以及相关的数据结构。
+ 注：这一步初始化操作也会由内存不存导致 初始化失败。初始化完成后，才能继续对我们的`curses`操作。
+
+`refresh`，在调用该函数之前，我们先调用了`printw`函数，让其在屏幕上输出“Hello，ncurses!", 在屏幕上进行输出 就会涉及到输出位置，即在我们当前的window(stdscr)中的坐标*(row, col)*， 坐标系的原点在窗口的左上角，从左到右为我们的*X*轴，即是我们*col*, 从上到下为我们的*Y*轴，即是我们的*row*，当我们把要输出的数据写入到*window(stdscr)*后，数据还只是存放到这个虚拟的窗口中，为了让其在屏幕上显示出来，我们必须调用`refresh`函数，来告诉`curses system`来把数据显示出来。
+
+`endwin`，作最后的清理工作，让当前Termianl结束`curses mode`模式，并翻译所占用的内存与数据结构。
+
+# 初始化
+在上一小节中，我们介绍了一个ncurses的基本结构，调用`initscr`函数进行初始化，之后，ncurses还提供了一些其他的函数来对`curses system`进行一些初始化设置 ，这些函数跟在`initscr`函数之后进行调用。
+
+`raw()` ， `cbreak()`
+`echo()`, `noecho()`
+`keypad()`, `halfdelay()`
+
+
+
+
+
