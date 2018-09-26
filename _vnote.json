@@ -32,6 +32,9 @@
         },
         {
             "name": "macos"
+        },
+        {
+            "name": "git"
         }
     ],
     "tags": [
